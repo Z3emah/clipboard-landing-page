@@ -1,0 +1,567 @@
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    background-color: black;
+    font-family: "Bai Jamjuree";
+}
+
+/*creating a grid for the whole content*/
+
+.landing-page{
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    justify-items: center;
+}
+ p{
+    font-size: 1.5rem;
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    width: 55rem;
+    line-height: 2.5rem;
+}
+
+
+section{
+    justify-items: center;
+    margin-bottom: 10rem;
+}
+
+/*this styles the header section of the page*/
+
+.landing-page header{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent),
+    url(./images/bg-header-desktop.png);
+    background-size: cover;
+    background-position: center;
+    justify-items: center;
+    margin-bottom: 10rem;
+    width: 100%;
+    padding-top: 9rem;
+    
+}
+.landing-page header img{
+    width: 8rem;
+}
+.landing-page header h1{
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+/*styling the general h2 headings and buttons*/
+
+.landing-page h2{
+    font-size: 2.7rem;
+    margin-bottom: 1.8rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.download-button button{
+    margin-top: 3rem;
+    margin-right: 0.5rem;
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    color: white;  
+    cursor: pointer;  
+}
+
+#ios-btn{
+    background-color: rgb(38, 186, 164);
+    border-bottom: 2px solid rgb(25, 116, 102);
+    box-shadow: 0px 8px 10px -6px rgba(38, 186, 164, 0.5);
+
+}
+#mac-btn{
+    background-color: rgb(97, 115, 255);
+    border-bottom: 2px solid rgb(48, 60, 149);
+    box-shadow: 0px 8px 10px -6px rgba(133, 147, 145, 0.5);
+}
+#ios-btn:active{
+    opacity: 0.8;
+    transition: 0.1s;
+}
+#mac-btn:active{
+    opacity: 0.8;
+    transition: 0.1s;
+}
+
+/*these styles belong to the second section of the page*/
+
+.snippets p{
+    width: 60rem;    
+}
+/*the image and subsequent texts(subsections) are contained in a container named computer*/
+.computer{
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+    margin-top: 8rem;
+    height: fit-content;
+    overflow: hidden;
+ }
+ .computer img{
+   width: 65rem; 
+   margin-left: -5rem;
+ }
+
+.snippets-subsection{
+    width: 40rem;
+    align-content: center;
+    margin-left: 4rem;
+}
+.snippets-subsection h3,
+.workflow-grid h3{
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+.snippets-subsection p{
+    margin-bottom: 3.5rem;
+    width: 33rem;
+    text-align: left;
+}
+
+/*these styles belong to the third section of the page*/
+
+.clipboard img{
+    width: 65rem;
+}
+.clipboard p{
+    width: 58rem;
+    margin-bottom: 5rem;
+}
+
+/*these styles belong to the forth section of the page*/
+
+.workflow-grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    padding: 2rem 8rem;
+    place-content: center;
+}
+.workflow-section{
+    justify-items: center;
+}
+.workflow-section img{
+    margin-bottom: 3rem;
+    width: 3rem;
+}
+.workflow-section p{
+    width: 32.5rem;
+    text-align: center;
+}
+
+/*these styles belong to the fifth section of the page*/
+
+.logos{
+    padding: 2rem 8rem;
+    display: grid;
+    margin-left: 3rem;
+    grid-template-columns: repeat(5, auto);
+    gap: 5rem;
+}
+.logos img{
+    cursor: pointer;
+}
+
+/*these styles belong to the sixth section of the page*/
+.download p{
+    width: 60rem;
+}
+
+/*these styles belong to the footer section of the page*/
+
+.footer{
+    background-color:  hsl(210, 11%, 96%);
+   display: flex;
+   gap: 3rem;  
+   height: 10rem;
+   align-items: center;
+   width: 100%;
+}
+
+/*copyright image container*/
+.copyright-img{
+    margin-left: 15rem;
+    margin-right: 7rem;
+}
+
+/*copyright image*/
+.copyright-img img{
+    width: 4rem;
+}
+.footer p{
+    text-align: start;
+    width: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+/*text grid*/
+.customer-care-grid{
+    display: flex;
+}
+/*each section of the text is contained in a container named customer-care*/
+.customer-care{
+    margin-right: 4rem; 
+}
+.customer-care p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:  hsl(203, 5%, 54%);
+    transform: 0.1s;
+}
+#contact:active{
+    color: rgba(36, 156, 138, 0.871);
+    text-decoration: none;
+}
+
+/*these styles are applied to the social media images*/
+
+.socials{
+   align-content: center;
+   margin-right: 2rem;
+   margin-left: 25rem;
+
+}
+.socials img{
+   width: 1.8rem;
+   margin-right: 2rem;
+   cursor: pointer; 
+}
+#twitter:active{
+    filter: invert(100%) hue-rotate(140deg) brightness(100%) contrast(100%);
+    color: green;
+}
+
+/*for screen sizes below 600px in width*/
+@media (max-width: 599px){
+    section{
+        margin-bottom: 15rem; 
+    }
+    p{
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        width: 32.8rem;
+    }
+        
+    .landing-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .landing-page header{
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent),
+        url(./images/bg-header-mobile.png);
+        background-size: cover;
+        background-position: center;
+        padding-top: 20rem;
+        margin-bottom: 18rem;
+    }
+    .landing-page header img{
+        width: 10rem;
+    }
+    .landing-page header h1{
+        font-size: 3rem;
+        font-weight: 700;
+        width: 32rem;
+        margin-bottom: 3rem;
+        margin-top: 8rem;
+    }
+    .landing-page header p{
+        margin-bottom: 5rem;
+    } 
+    
+    
+    .landing-page h2{
+        font-size: 2.5rem;
+        width: 30rem;
+    }
+    .snippets-subsection h3,
+    .workflow-grid h3{
+        font-size: 2.2rem;
+    }
+    .snippets-subsection p{
+        text-align: center;
+        margin-left: 2.2rem;
+    }
+    .download-button button{
+        display: block;
+        font-size: 1.9rem;
+        padding: 2rem 8rem;
+        border-radius: 5rem;
+    }
+    #ios-btn{
+        background-color: rgb(38, 186, 164);
+        border-bottom: 5px solid rgb(34, 135, 120);
+        box-shadow: 0px 10px 30px -9px rgba(38, 186, 164, 0.5);
+    
+    }
+    #mac-btn{
+        background-color: rgb(97, 115, 255);
+        border-bottom: 5px solid rgb(71, 79, 141);
+        box-shadow: 0px 10px 30px -9px rgba(133, 147, 145, 0.5);
+    }
+    .computer img{
+        width: 30rem; 
+        margin: 0;
+      }
+      .snippets p{
+        width: 32rem;
+      }
+      .clipboard img{
+        width: 30rem;
+      }
+      .clipboard p{
+        width: 32rem;
+      }
+    .computer{
+        flex-direction: column;
+        gap: 10rem;
+        align-items: center;
+    }
+    .workflow-grid{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+    .workflow-section img{
+        margin-bottom: 6rem;
+        margin-top: 4rem;
+        width: 6rem;
+    }
+    .workflow-section p{
+        width: 33rem;
+        text-align: center;
+    }
+    
+    .logos{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        gap: 8rem;
+    }
+    .logos img{
+        width: 15rem;
+    }
+    .download p{
+        width: 32.5rem;
+        margin-bottom: 5rem;
+    }
+    
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+        place-content: center;
+        padding-bottom: 3rem;
+    }
+    .copyright-img{
+        margin: 10rem auto 3rem auto;
+    }
+    .copyright-img img{
+        margin: 0rem;
+        width: 5rem;
+    }
+    .customer-care-grid{
+        flex-direction: column;
+        margin: 0;
+    }
+    .customer-care{
+        margin: 0;
+        margin-bottom: 1rem;
+        justify-items: center;
+    }  
+       
+    .footer p{
+        margin-bottom: 3.5rem;
+        text-align:justify;
+        width: fit-content;
+    }
+    
+    .socials{
+        display: flex;
+        margin: 0;
+        width: 20rem;
+        justify-content: space-between;
+    }
+    .socials img{
+        width: 3rem;   
+     }
+    
+}
+
+/*for screen sizes between 600px and 1000px in width*/
+
+@media (min-width:600px) and (max-width:1000px){
+
+section{
+    margin-bottom: 20rem;
+   
+}
+p{
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    width: 42.5rem;
+}
+    
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-page header{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent),
+    url(./images/bg-header-mobile.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 20rem;
+    margin-bottom: 18rem;
+}
+.landing-page header img{
+    width: 15rem;
+}
+.landing-page header h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    width: 45rem;
+    margin-bottom: 3rem;
+    margin-top: 8rem;
+}
+.landing-page header p{
+    margin-bottom: 5rem;
+} 
+
+
+.landing-page h2{
+    font-size: 4rem;
+    width: 45rem;
+}
+.snippets-subsection h3,
+.workflow-grid h3{
+    font-size: 3rem;
+}
+.snippets-subsection p{
+    text-align: center;
+}
+.download-button button{
+    display: block;
+    font-size: 2.2rem;
+    padding: 2.5rem 15rem;
+    border-radius: 5rem;
+}
+#ios-btn{
+    background-color: rgb(38, 186, 164);
+    border-bottom: 5px solid rgb(34, 135, 120);
+    box-shadow: 0px 10px 30px -9px rgba(38, 186, 164, 0.5);
+
+}
+#mac-btn{
+    background-color: rgb(97, 115, 255);
+    border-bottom: 5px solid rgb(71, 79, 141);
+    box-shadow: 0px 10px 30px -9px rgba(133, 147, 145, 0.5);
+}
+.computer img{
+    width: 45rem; 
+    margin: 0;
+  }
+  .snippets p{
+    width: 42rem;
+  }
+  .clipboard img{
+    width: 45rem;
+  }
+  .clipboard p{
+    width: 42rem;
+  }
+.computer{
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+}
+.workflow-grid{
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+}
+.workflow-section img{
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+    width: 8rem;
+}
+.workflow-section p{
+    width: 43rem;
+    text-align: center;
+}
+
+.logos{
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    gap: 8rem;
+}
+.logos img{
+    width: 18rem;
+}
+.download p{
+    width: 42rem;
+    margin-bottom: 5rem;
+}
+
+.footer{
+    flex-direction: column;
+    height: fit-content;
+    place-content: center;
+    padding-bottom: 3rem;
+}
+.copyright-img{
+    margin: 10rem auto 3rem auto;
+}
+.copyright-img img{
+    margin: 0rem;
+    width: 8rem;
+}
+.customer-care-grid{
+    flex-direction: column;
+    margin: 0;
+}
+.customer-care{
+    margin: 0;
+    margin-bottom: 1rem;
+    justify-items: center;
+}  
+   
+.footer p{
+    margin-bottom: 3.5rem;
+    text-align:justify;
+    width: fit-content;
+}
+
+.socials{
+    display: flex;
+    margin: 0;
+    width: 20rem;
+    justify-content: space-between;
+}
+.socials img{
+    width: 3rem;   
+ }
+}
