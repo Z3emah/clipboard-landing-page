@@ -120,7 +120,8 @@ section{
     gap: 20rem;
     width: 100%;
     margin-top: 8rem;
-    height: fit-content;  
+    height: fit-content; 
+    place-content: center; 
  }
 
  .computer img{
