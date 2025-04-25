@@ -118,7 +118,8 @@ section{
     width: 100%;
     margin-top: 8rem;
     height: fit-content; 
-    place-content: center; 
+    place-items: center;
+   
  }
 
  .computer img{
@@ -160,7 +161,6 @@ section{
     gap: 15rem;
     margin-top: 5rem;
     padding: 2rem 8rem;
-    place-content: center;
 }
 .workflow-section{
     justify-items: center;
