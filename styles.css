@@ -562,7 +562,7 @@ p{
     width: 3rem;   
  }
 }
-@media (min-width:1000px) and (max-width: 1300px){
+@media (min-width:1001px) and (max-width: 1300px){
     .workflow-grid{
         grid-template-columns: repeat(2, auto);
         gap: 15rem;
