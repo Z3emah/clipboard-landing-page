@@ -83,6 +83,7 @@ section{
     border: none;
     color: white;  
     cursor: pointer;  
+    outline: none;
 }
 
 #ios-btn{
@@ -100,11 +101,12 @@ section{
     opacity: 0.8;
     transition: 0.1s;
 }
+
 .download-button:active{
-    padding: 1.3rem 5rem;
+
     font-size: 2rem;
-    transition: 0.1s;
-    color: black;
+    transition: all .1s ease-in-out;
+    color: black; 
 }
 
 /*these styles belong to the second section of the page*/
@@ -578,6 +580,5 @@ p{
     }
     .copyright-img img{
         width: 5rem;
-    }
-    
+    }   
 }
